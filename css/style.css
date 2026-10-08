@@ -105,7 +105,9 @@ body {
     }
 
     .card1 {
-        grid-column: 1 / -1;
+        /* why we dont need .card card1? */
+
+        grid-column: 1 / -1; 
         /* get confused! */
     }
 }
