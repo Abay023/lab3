@@ -88,19 +88,25 @@ body {
 
     .wrapper {
         grid-template-columns: 220px 1fr;
-
-        grid-template-areas:
+        /* here is to make left fixed and right flexible as 1 frame */
+        grid-template-areas: 
+            /* in desktop version, here are 3 main portal where navbar and main card content are placed at the same vertical position*/
+            /* in that case, we need two columns horizontally, left for nav (fixed 220px) and right for flexed card width, depending on the available space */
+            /* -> equal space for card 2 & 3 and full width for card 1 */
             "header header"
             "nav main"
             "footer footer";
     }
 
     .main {
+        /* to make card 2 & 3 equal. we should have 2 same column frames*/
         grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: 1fr 1fr;  -> tested: same */
     }
 
     .card1 {
         grid-column: 1 / -1;
+        /* get confused! */
     }
 }
 
