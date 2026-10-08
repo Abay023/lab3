@@ -105,10 +105,11 @@ body {
     }
 
     .card1 {
-        /* why we dont need .card card1? */
-
+        /* why we don't need .card card1? */ 
+        /* both card and card1 are assigned to be classes in html, so "card card1" is not the full class name but 2 separated classes */
         grid-column: 1 / -1; 
         /* get confused! */
+        /* 1/-1 means from the first frame column to the last frame column, so across the entire grid area. */
     }
 }
 
